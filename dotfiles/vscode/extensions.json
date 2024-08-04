@@ -1,0 +1,17 @@
+[
+  "catppuccin.catppuccin-vsc",
+  "dbaeumer.vscode-eslint",
+  "editorconfig.editorconfig",
+  "esbenp.prettier-vscode",
+  "nrwl.angular-console",
+  "streetsidesoftware.code-spell-checker",
+  "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+  "stylelint.vscode-stylelint",
+  "supermaven.supermaven",
+  "usernamehw.errorlens",
+  "waderyan.gitblame",
+  "yoavbls.pretty-ts-errors",
+  "jnoortheen.nix-ide",
+  "wilfriedago.vscode-symbols-icon-theme",
+  "jdinhlife.gruvbox"
+]
