@@ -1,4 +1,9 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   imports = [
@@ -6,6 +11,7 @@
     ../../home-manager/common-variables.nix
     ../../home-manager/fish.nix
     ../../home-manager/git.nix
+    ../../home-manager/lazygit.nix
   ];
 
   home.username = "nicolas";
@@ -15,7 +21,8 @@
 
   home.file = {
     "/home/nicolas/.npmrc".source = ../../dotfiles/npm/.npmrc;
-    "/home/nicolas/.local/share/code-server/User/settings.json".source = ../../dotfiles/vscode/settings.json;
+    "/home/nicolas/.local/share/code-server/User/settings.json".source =
+      ../../dotfiles/vscode/settings.json;
     "/home/nicolas/.vscode-extensions.json".source = ../../dotfiles/vscode/extensions.json;
   };
 

@@ -4,9 +4,7 @@
     vim
     nixd
     nixfmt-rfc-style
-    stow
     transcrypt
-    lazygit
     eza
     bat
     fzf
