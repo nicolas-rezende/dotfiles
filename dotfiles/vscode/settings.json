@@ -36,5 +36,8 @@
   "nix.enableLanguageServer": true,
   "nix.serverPath": "nixd",
   "workbench.iconTheme": "symbols",
-  "symbols.hidesExplorerArrows": false
+  "symbols.hidesExplorerArrows": false,
+  "[nix]": {
+    "editor.defaultFormatter": "jnoortheen.nix-ide"
+  }
 }
