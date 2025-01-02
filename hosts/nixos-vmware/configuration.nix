@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
-    /etc/nixos/hardware-configuration.nix
+    ./hardware-configuration.nix
   ];
 
   networking.hostName = "nixos-vmware";
@@ -28,6 +28,17 @@
       "wheel"
       "acme"
     ];
+    openssh.authorizedKeys.keys = [
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBVxFt9oc+P31mvJmLE2gdEVVIzCIdVEI4MZbuSKswZp"
+    ];
+  };
+
+    services.openssh = {
+    enable = true;
+    settings = {
+      PermitRootLogin = "no";
+      PasswordAuthentication = false;
+    };
   };
 
   nixpkgs.config.allowUnfree = true;
@@ -82,14 +93,6 @@
   services.xserver.xkb = {
     layout = "us";
     variant = "alt-intl";
-  };
-
-  services.openssh = {
-    enable = true;
-    settings = {
-      PermitRootLogin = "no";
-      PasswordAuthentication = false;
-    };
   };
 
   system.stateVersion = "24.11";
